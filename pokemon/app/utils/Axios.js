@@ -1,12 +1,12 @@
-import { baseURL } from '../env.js';
+import { baseURL, pokeURL } from '../env.js';
 import { logger } from '../utils/Logger.js';
 
 // @ts-ignore
 // eslint-disable-next-line no-undef
 export const api = axios.create({
-  baseURL: baseURL,
+  baseURL: pokeURL,
   timeout: 8000,
-  withCredentials: true
+  withCredentials: false
 })
 
 api.interceptors.request.use(config => config, handleAxiosError)

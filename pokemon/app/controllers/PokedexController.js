@@ -5,6 +5,7 @@ import { Pop } from "../utils/Pop.js"
 export class PokedexController {
   constructor() {
     console.log('Pokedex Controller Loaded')
+    this.getPokemon()
   }
 
   async getPokemon() {
