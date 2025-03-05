@@ -3,7 +3,10 @@ body {
   /* Dark background */
   color: #ccc;
   /* Light text */
-  font-family: monospace;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  /* font-family: monospace; */
   /* Monospace font */
   margin: 0;
   padding: 0;
@@ -127,4 +130,10 @@ main {
   cursor: pointer;
   align-self: center;
   /* Center the button */
+}
+
+.pix-font {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }

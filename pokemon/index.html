@@ -5,84 +5,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="icon" href="./assets/img/logo.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
+  <script id="debug-script" src="https://cdn.jsdelivr.net/gh/MickShannahan/style-debug@latest/debug.min.js"
+    defer></script>
   <title>pokemon</title>
 </head>
 
-<body data-bs-theme="light">
-  <!-- SECTION -->
+<body data-bs-theme="light" class="debug">
   <header>
     <h1>Monster Collector <span style="color: #0f0;">:)</span></h1>
     <div>Cash Gochem <img src="placeholder-avatar.jpg" alt="Avatar"></div>
   </header>
 
   <main>
-    <div class="left-panel">
-      <div class="regions">
-        <button>Kanto</button>
-        <button>Johto</button>
-        <button>Hoenn</button>
-        <button>Sinnoh</button>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="regions">
+            <button>Kanto</button>
+            <button>Johto</button>
+            <button>Hoenn</button>
+            <button>Sinnoh</button>
+          </div>
+        </div>
       </div>
-      <h2>Kanto 151</h2>
-      <ul>
-        <li>Agumon</li>
-        <li>Armadillomon</li>
-        <li>Impmon</li>
-        <li>Elecmon</li>
-        <li>Elecmon</li>
-        <li>Gabumon</li>
-        <li>Otamamon</li>
-        <li>Gaomon</li>
-        <li>Bulbasaur</li>
-        <li>Guilmon</li>
-        <li>Kudamon</li>
-        <li>Keramon</li>
-        <li>Armadillomon</li>
-        <li>Gotsumon</li>
-        <li>Goblimon</li>
-        <li>Gomamon</li>
-        <li>Patamon</li>
-        <li>Gazimon</li>
-        <li>Gomamon</li>
-        <li>Impmon</li>
-      </ul>
-    </div>
-
-    <div class="center-panel">
-      <h2>Bulbasaur <span style="font-size: 0.8em;">No. 1</span></h2>
-      <div class="pokemon-image">
-        <img src="placeholder-bulbasaur.png" alt="Bulbasaur">
+    </section>
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <div class="left-panel">
+            <h2>Kanto 151</h2>
+            <ul>
+              <li>Agumon</li>
+              <li>Armadillomon</li>
+              <li>Impmon</li>
+              <li>Elecmon</li>
+              <li>Elecmon</li>
+              <li>Gabumon</li>
+              <li>Otamamon</li>
+              <li>Gaomon</li>
+              <li>Bulbasaur</li>
+              <li>Guilmon</li>
+              <li>Kudamon</li>
+              <li>Keramon</li>
+              <li>Armadillomon</li>
+              <li>Gotsumon</li>
+              <li>Goblimon</li>
+              <li>Gomamon</li>
+              <li>Patamon</li>
+              <li>Gazimon</li>
+              <li>Gomamon</li>
+              <li>Impmon</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="center-panel">
+            <h2>Bulbasaur <span style="font-size: 0.8em;">No. 1</span></h2>
+            <div class="pokemon-image">
+              <img src="placeholder-bulbasaur.png" alt="Bulbasaur">
+            </div>
+            <div class="pokemon-stats">
+              <p>Grass <span style="color: green;">&nbsp;</span> Poison <span style="color: purple;">&nbsp;</span></p>
+              <p>Health: 45 hp</p>
+              <p>Attack: 49 ap</p>
+              <p>Defense: 49 dp</p>
+              <p>Speed: 45 spd</p>
+              <p>Weight: 69 hg</p>
+              <p>Height: 7 dm</p>
+            </div>
+            <button class="catch-button">Catch em!</button>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="right-panel">
+            <h2>My Pokemon 6</h2>
+            <ul>
+              <li>Impmon</li>
+              <li>Gaomon</li>
+              <li>Bulbasaur</li>
+              <li>Guilmon</li>
+              <li>Gomamon</li>
+              <li>Patamon</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="pokemon-stats">
-        <p>Grass <span style="color: green;">&nbsp;</span> Poison <span style="color: purple;">&nbsp;</span></p>
-        <p>Health: 45 hp</p>
-        <p>Attack: 49 ap</p>
-        <p>Defense: 49 dp</p>
-        <p>Speed: 45 spd</p>
-        <p>Weight: 69 hg</p>
-        <p>Height: 7 dm</p>
-      </div>
-      <button class="catch-button">Catch em!</button>
-    </div>
-
-    <div class="right-panel">
-      <h2>My Pokemon 6</h2>
-      <ul>
-        <li>Impmon</li>
-        <li>Gaomon</li>
-        <li>Bulbasaur</li>
-        <li>Guilmon</li>
-        <li>Gomamon</li>
-        <li>Patamon</li>
-      </ul>
-    </div>
-
-
-
+    </section>
   </main>
 
   <footer class="text-bg-dark">
