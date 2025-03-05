@@ -6,6 +6,8 @@ class ObservableAppState extends EventEmitter {
 
   /**@type {Pokemon[]} */
   pokemon = []
+
+
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())
