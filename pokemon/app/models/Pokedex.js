@@ -21,11 +21,13 @@ export class Pokemon {
 
   get monListTemplate() {
     return `
-      <div class="scrolling-list">
-        <ul>
           <li>${this.name}</li>
-        </ul>
-      </div>
+    `
+  }
+
+  getActiveTemplate() {
+    return `
+    
     `
   }
 }

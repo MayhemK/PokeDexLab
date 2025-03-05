@@ -141,7 +141,7 @@ main {
 
 .scrolling-list {
   overflow-y: auto;
-  max-height: 20rem;
+  max-height: 80dvh;
 }
 
 .scrolling-list ul {
@@ -150,8 +150,6 @@ main {
   margin: 0;
 }
 
-
-/* //TODO fix scroll */
 
 /* Optional: Add hover effect */
 .scrolling-list li:hover {
