@@ -138,3 +138,22 @@ main {
   font-weight: 400;
   font-style: normal;
 }
+
+.scrolling-list {
+  overflow-y: auto;
+  max-height: 20rem;
+}
+
+.scrolling-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* //TODO fix scroll */
+
+/* Optional: Add hover effect */
+.scrolling-list li:hover {
+  background-color: #444;
+}
