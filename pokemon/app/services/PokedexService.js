@@ -5,10 +5,12 @@ import { api } from "../utils/Axios.js";
 class PokemonService {
   async getPokemon() {
     const response = await api.get('/generation/1')
-    console.log('GOT DA MONS', response.data);
+    console.log('GOT DA MONS', response.data.pokemon_species);
     const pokemon = response.data.pokemon_species.map(pojo => new Pokemon(pojo))
     AppState.pokemon = pokemon
+
   }
 }
+
 
 export const pokemonService = new PokemonService()
