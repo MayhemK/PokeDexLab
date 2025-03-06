@@ -10,6 +10,13 @@ class PokemonService {
     AppState.pokemon = pokemon
 
   }
+  async monByName() {
+    const response = await api.get('/pokemon/${name}')
+    console.log('this mon specifically', response.data);
+    const pokemon = new DetailedPokemon(response.data)
+    AppState.activePokemon = pokemon
+  }
+
 }
 
 
